@@ -3,6 +3,7 @@ import {
   } from "react-router-dom";
 import Dashboard from "../Layouts/Dashboard";
 import AddVehicle from "../Pages/AddVehicle/AddVehicle";
+import CreateSTS from "../Pages/CreateSTS/CreateSTS";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         {
           path: "/addVehicles",
           element: <AddVehicle />
+        },
+        {
+          path: "createSTS",
+          element: <CreateSTS />
         }
     ]
     },

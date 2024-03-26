@@ -12,6 +12,10 @@ export default function Dashboard() {
         path: "/addVehicles",
         name: "Add Vehicles"
     },
+    {
+        path: "/createSTS",
+        name: "Create STS"
+    },
   ];
 
   return (
@@ -25,13 +29,14 @@ export default function Dashboard() {
       padding="md"
     >
       <AppShell.Header>
+        <div className='text-3xl font-bold text-center lg:text-left lg:ml-6 lg:pt-2 text-blue-600'><span className='text-green-500'>Eco</span>Sync</div>
         <Burger
           opened={opened}
           onClick={toggle}
           hiddenFrom="sm"
           size="sm"
         />
-        <div>EcoSync</div>
+        
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
